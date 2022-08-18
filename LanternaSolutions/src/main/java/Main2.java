@@ -28,7 +28,7 @@ public class Main2 {
         mazeObstacles();
 
         Position bombPosition = new Position(x, y);
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 100; i++) {
             Random r = new Random();
             bombPosition = new Position(r.nextInt(76) + 2, r.nextInt(20) + 2);
             if (screen.getChar(bombPosition.x, bombPosition.y) != block) {
